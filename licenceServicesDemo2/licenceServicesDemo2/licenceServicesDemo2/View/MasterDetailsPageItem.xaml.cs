@@ -20,6 +20,8 @@ namespace licenceServicesDemo2.View
         }
         public MasterDetailsPageItem()
         {
+
+            //MasterBehavior = MasterBehavior.Popover;
             InitializeComponent();
 
             menuList = new List<MasterPageItem>();
@@ -35,6 +37,18 @@ namespace licenceServicesDemo2.View
                 Title = "Features",
                 //Icon = "contacticon.png",
                 TargetType = typeof(FeaturePage)
+            });
+
+
+            menuList.Add(new MasterPageItem()
+            {
+                Title = "Settingss"
+            });
+
+
+            menuList.Add(new MasterPageItem()
+            {
+                Title="Log out"
             });
             
             // Setting our list to be ItemSource for ListView in MainPage.xaml  
