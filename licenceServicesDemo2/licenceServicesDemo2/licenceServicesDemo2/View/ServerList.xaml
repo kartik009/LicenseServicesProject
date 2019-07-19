@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="licenceServicesDemo2.View.ServerList"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Servers"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <ListView x:Name="ServerListView">
+            <ListView.Header>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width=".2*" />
+                        <ColumnDefinition Width=".4*" />
+                        <ColumnDefinition Width=".2*" />
+                        <ColumnDefinition Width=".2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        HorizontalTextAlignment="Center"
+                        Text="Server ID" />
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="IP" />
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Text="Used" />
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        HorizontalTextAlignment="Center"
+                        Text="Available" />
+                </Grid>
+
+            </ListView.Header>
+
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!--<StackLayout Padding="0,5,5,0">
+                            <Label Text="{Binding ServerID}" />
+                            <Label Text="{Binding IP}" />
+                            <Label Text="{Binding Used}" />
+                            <Label Text="{Binding Available}" />
+                        </StackLayout>-->
+
+
+                        <!--  column grid  -->
+                        <Grid Padding="0,2,0,0">
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".4*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".2*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label
+                                Grid.Column="0"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding ServerID}" />
+                            <Label Grid.Column="1" Text="{Binding IP}" />
+                            <Label Grid.Column="2" Text="{Binding Used}" />
+                            <Label
+                                Grid.Column="3"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding Available}" />
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

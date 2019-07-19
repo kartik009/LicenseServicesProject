@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage
+    x:Class="licenceServicesDemo2.View.MasterDetailsPageItem"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <Grid BackgroundColor="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid>
+                    <Image
+                        Aspect="AspectFill"
+                        BackgroundColor="LightPink"
+                        Source="bg.png" />
+                    <StackLayout
+                        Padding="0,20,0,0"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="CenterAndExpand">
+                        <Image
+                            Aspect="AspectFill"
+                            HeightRequest="85"
+                            Source="profile.png"
+                            WidthRequest="85" />
+                        <Label
+                            FontSize="Large"
+                            Text="User Name"
+                            TextColor="Black" />
+                    </StackLayout>
+                </Grid>
+                <StackLayout
+                    Grid.Row="1"
+                    Margin="2,2,2,0"
+                    Spacing="15">
+                    <ListView
+                        x:Name="navigationDrawerList"
+                        BackgroundColor="#e8e8e8"
+                        ItemSelected="OnMenuItemSelected"
+                        RowHeight="60"
+                        SeparatorVisibility="None">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <!--  Main design for our menu items  -->
+                                    <StackLayout
+                                        Padding="2,1,0,1"
+                                        Orientation="Horizontal"
+                                        Spacing="20"
+                                        VerticalOptions="FillAndExpand">
+                                        <Image
+                                            HeightRequest="40"
+                                            Source="{Binding Icon}"
+                                            VerticalOptions="Center"
+                                            WidthRequest="40" />
+                                        <Label
+                                            FontSize="Medium"
+                                            Text="{Binding Title}"
+                                            TextColor="Black"
+                                            VerticalOptions="Center" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <NavigationPage />
+    </MasterDetailPage.Detail>
+</MasterDetailPage> 
