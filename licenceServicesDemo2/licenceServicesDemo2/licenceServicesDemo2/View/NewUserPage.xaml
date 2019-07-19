@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="licenceServicesDemo2.View.NewUserPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Registration" Margin="0,0,0,50" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Cyan" />
+
+            <Entry Placeholder="Enter your Name" Margin="0,0,0,5" WidthRequest="300"/>
+            <Entry Placeholder="Enter your Email" Margin="0,0,0,5" WidthRequest="300"/>
+            
+            <Entry Placeholder="Choose your UserName" Margin="0,0,0,5" WidthRequest="300" />
+            <Entry Placeholder="Choose your Password" IsPassword="True" Margin="0,0,0,5" WidthRequest="300"/>
+            <Entry Placeholder="Confirm Password" IsPassword="True" Margin="0,0,0,5" WidthRequest="300"/>
+
+            <Button x:Name="btn_NewUser" Text="Register" HeightRequest="35" WidthRequest="70" Clicked="Btn_NewUser_Clicked"  Margin="0,0,0,30" BackgroundColor="DarkBlue" TextColor="White" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

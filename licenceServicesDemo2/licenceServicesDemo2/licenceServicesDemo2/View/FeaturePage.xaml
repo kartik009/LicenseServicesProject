@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="licenceServicesDemo2.View.FeaturePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Features"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+
+        <ListView x:Name="FeatureListView" ItemTapped="FeatureListView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <!--<StackLayout Padding="0,5,10,0">
+                            <Label Text="{Binding FeatureName}" />
+                            <Label Text="{Binding Ver}" />
+                            <Label Text="{Binding Count}" />
+                            <Label Text="{Binding Available}" />
+                            <Label Text="{Binding ExperyDate}" />
+                        </StackLayout>-->
+
+                        <!--  column grid  -->
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".1*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label
+                                Grid.Column="0"
+                                HorizontalTextAlignment="Center"
+                                Text="{Binding FeatureName}" />
+
+                            <Label Grid.Column="1" Text="{Binding Ver}" />
+                            <Label Grid.Column="2" Text="{Binding Count}" />
+                            <Label Grid.Column="3" Text="{Binding Available}" />
+                            <Label Grid.Column="4" Text="{Binding ExperyDate}" />
+
+                        </Grid>
+
+                    </ViewCell>
+                    <!--<TextCell Text="Hello From FeaturePage" />-->
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

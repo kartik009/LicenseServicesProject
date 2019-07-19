@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="licenceServicesDemo2.View.ForgetPassPage">
+    <ContentPage.Content>
+        <StackLayout  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand">
+            <Entry Placeholder="Enter UserName" WidthRequest="300" Margin="0,0,0,5" />
+            <Button Text="Check Your Email" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
