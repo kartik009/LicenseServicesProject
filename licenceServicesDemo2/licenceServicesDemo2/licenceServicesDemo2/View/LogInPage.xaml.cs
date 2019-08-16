@@ -59,9 +59,9 @@ namespace licenceServicesDemo2.View
                     //App.Current.Properties["TType"] = temp.type;
                     //App.Current.SavePropertiesAsync();
 
-                    Settings.username = temp.username.ToString();
+                    Settings.username = temp.username;
 
-                    Settings.Ttype = temp.type.ToString();
+                    Settings.Ttype = temp.type;
 
                     Navigation.PushModalAsync(new MasterDetailsPageItem());
 

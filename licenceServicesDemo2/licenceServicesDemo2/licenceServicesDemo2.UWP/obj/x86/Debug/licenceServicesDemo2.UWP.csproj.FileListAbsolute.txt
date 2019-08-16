@@ -307,3 +307,5 @@ C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceSer
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
+C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\App.xaml
+C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\licenceServicesDemo2.UWP.pdb

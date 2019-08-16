@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=ddcaecad-0b2c-4d94-a109-5e3ba7c9d452</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>AF8D2D1107316C8EA0D98188E82D3EF07B60E7E17B0345A5C69561F5E299E998</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>3d4e0dc9-cded-40c9-8173-b9cfdd34b7b9_1.0.0.0_x86__ynawt2y6370wc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>3d4e0dc9-cded-40c9-8173-b9cfdd34b7b9_ynawt2y6370wc!App</RegisteredUserModeAppID>
@@ -27,16 +27,24 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T12:05:52.077</Modified>
+      <Modified>2019-08-16T10:11:11.754</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\licenceServicesDemo2.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\licenceServicesDemo2.UWP.exe">
       <PackagePath>entrypoint\licenceServicesDemo2.UWP.exe</PackagePath>
-      <Modified>2019-07-19T12:05:47.765</Modified>
+      <Modified>2019-08-16T10:11:09.453</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\rg.plugins.popup\1.1.5.188\lib\uap10.0\Rg.Plugins.Popup.UWP.dll">
+      <PackagePath>Rg.Plugins.Popup.UWP.dll</PackagePath>
+      <Modified>2019-01-25T05:58:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\rg.plugins.popup\1.1.5.188\lib\uap10.0\Rg.Plugins.Popup.dll">
+      <PackagePath>Rg.Plugins.Popup.dll</PackagePath>
+      <Modified>2019-01-25T05:58:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -698,6 +706,14 @@
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2016-11-30T02:58:38.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\xam.plugins.settings\3.1.1\lib\UAP10\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+      <Modified>2017-10-17T23:03:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\xam.plugins.settings\3.1.1\lib\UAP10\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+      <Modified>2017-10-17T23:03:16.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\xamarin.essentials\1.1.0\lib\uap10.0.16299\Xamarin.Essentials.dll">
       <PackagePath>Xamarin.Essentials.dll</PackagePath>
       <Modified>2019-03-15T22:29:30.000</Modified>
@@ -718,164 +734,164 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2019-05-11T19:47:20.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\licenceServicesDemo2.dll">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\licenceServicesDemo2.dll">
       <PackagePath>licenceServicesDemo2.dll</PackagePath>
-      <Modified>2019-07-19T12:17:27.355</Modified>
+      <Modified>2019-08-16T10:10:59.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\xam\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2016-11-30T02:58:38.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.668</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.426</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.684</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-07-19T11:54:03.442</Modified>
+      <Modified>2019-08-16T09:26:36.700</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\licenceServicesDemo2.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\licenceServicesDemo2.UWP.xr.xml">
       <PackagePath>licenceServicesDemo2.UWP.xr.xml</PackagePath>
-      <Modified>2019-07-19T12:05:47.343</Modified>
+      <Modified>2019-08-16T09:26:37.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-07-19T12:05:47.374</Modified>
+      <Modified>2019-08-16T10:11:08.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-07-19T12:05:47.374</Modified>
+      <Modified>2019-08-16T10:11:08.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -885,13 +901,13 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2019-05-11T19:47:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-07-19T12:05:50.655</Modified>
+      <Modified>2019-08-16T09:32:22.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\Core\licenceServicesDemo2.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\bin\x86\Debug\Core\licenceServicesDemo2.UWP.exe">
       <PackagePath>licenceServicesDemo2.UWP.exe</PackagePath>
-      <Modified>2019-07-19T12:05:52.046</Modified>
+      <Modified>2019-08-16T10:11:11.736</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -681,25 +681,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kartik\\.nuget\\packages\\": {},
+    "C:\\Users\\xam\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Lincense Project\\05-08-19\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2.csproj",
+      "projectUniqueName": "C:\\Users\\xam\\Source\\Repos\\LicenseServicesProject1\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2.csproj",
       "projectName": "licenceServicesDemo2",
-      "projectPath": "D:\\Project\\Lincense Project\\05-08-19\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2.csproj",
-      "packagesPath": "C:\\Users\\kartik\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Lincense Project\\05-08-19\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\obj\\",
+      "projectPath": "C:\\Users\\xam\\Source\\Repos\\LicenseServicesProject1\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2.csproj",
+      "packagesPath": "C:\\Users\\xam\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xam\\Source\\Repos\\LicenseServicesProject1\\licenceServicesDemo2\\licenceServicesDemo2\\licenceServicesDemo2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\kartik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -708,8 +708,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nugetized.blob.core.windows.net/live-reload/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

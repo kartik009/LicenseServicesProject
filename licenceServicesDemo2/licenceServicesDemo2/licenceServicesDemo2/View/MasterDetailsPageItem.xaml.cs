@@ -2,6 +2,7 @@
 using licenceServicesDemo2.MenuItem;
 using licenceServicesDemo2.Model;
 using licenceServicesDemo2.View.Phone;
+using licenceServicesDemo2.View.Win10;
 using Rg.Plugins.Popup.Services;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,8 @@ namespace licenceServicesDemo2.View
     public partial class MasterDetailsPageItem : MasterDetailPage
     {
         TempUser temp;
+
+        Type t;
         public ObservableCollection<MasterPageItem> AppUsermenuList
         {
             get;
@@ -42,12 +45,23 @@ namespace licenceServicesDemo2.View
             temp.username = Settings.username;
 
             temp.type = Settings.Ttype;
-           
-                //temp.username = Convert.ToString(App.Current.Properties.ContainsKey("TUser"));
 
-                //temp.type = Convert.ToString(App.Current.Properties.ContainsKey("TType"));
-         
-            
+
+            if (Device.Idiom == TargetIdiom.Phone || Device.Idiom == TargetIdiom.Tablet)
+            {
+                t = typeof(TabbedPageSF);
+            }
+            else if (Device.Idiom == TargetIdiom.Desktop || Device.Idiom == TargetIdiom.TV)
+            {
+                t = typeof(ServerfeatureListForWin);
+            }
+
+
+            //temp.username = Convert.ToString(App.Current.Properties.ContainsKey("TUser"));
+
+            //temp.type = Convert.ToString(App.Current.Properties.ContainsKey("TType"));
+
+
             AppUsermenuList = new ObservableCollection<MasterPageItem>();
             
             AdminmenuList = new ObservableCollection<MasterPageItem>();
@@ -57,8 +71,8 @@ namespace licenceServicesDemo2.View
             {
                 Title = "Server List",
                 //Icon = "homeicon.png",
-                TargetType = typeof(TabbedPageSF)
-            });
+                TargetType = t
+            }); 
 
             //menuList.Add(new MasterPageItem()
             //{
@@ -81,16 +95,18 @@ namespace licenceServicesDemo2.View
                 Title="Log out"
             });
 
+            
 
-
-
+            
+            
             // Adding menu items to menuList and you can define title ,page and icon ==For Admin USer 
             AdminmenuList.Add(new MasterPageItem()
             {
                 Title = "Server List",
                 //Icon = "homeicon.png",
-                TargetType = typeof(TabbedPageSF)
-            });
+
+                TargetType = t
+            }); 
 
             //menuList.Add(new MasterPageItem()
             //{
@@ -142,8 +158,9 @@ namespace licenceServicesDemo2.View
             Type page = item.TargetType;
             if (item.Title == "Log out")
             {
-                Application.Current.Properties.Remove("TUser");
-                Application.Current.Properties.Remove("TType");
+                Settings.username = string.Empty;
+
+                Settings.Ttype = string.Empty;
 
                 App.Current.MainPage = new NavigationPage(new LogInPage());
 
@@ -153,7 +170,7 @@ namespace licenceServicesDemo2.View
                 //var logpage = new LogInPage();//this could be content page
                 //var rootPage = new NavigationPage(logpage);
                 //App= rootPage.Navigation;
-            }
+            }           
             else
             {
                 Detail = new NavigationPage((Page)Activator.CreateInstance(page));
