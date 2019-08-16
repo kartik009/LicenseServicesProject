@@ -38,3 +38,25 @@ C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceSer
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.dll
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\ref\licenceServicesDemo2.dll
 C:\Users\xam\Source\Repos\LicenseServicesProject\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.pdb
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\licenceServicesDemo2.deps.json
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\licenceServicesDemo2.dll
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\ref\licenceServicesDemo2.dll
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\bin\Debug\netstandard2.0\licenceServicesDemo2.pdb
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\AppUserSettings.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\FeatureItemPage.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\FeaturePage.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\ForgetPassPage.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\LogInPage.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\MasterDetailsPageItem.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\NewUserPage.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\Phone\TabbedPageSF.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\View\ServerList.xaml.g.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.csproj.CoreCompileInputs.cache
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.AssemblyInfoInputs.cache
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.AssemblyInfo.cs
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.dll
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\ref\licenceServicesDemo2.dll
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.pdb
+D:\Project\Lincense Project\05-08-19\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2\obj\Debug\netstandard2.0\licenceServicesDemo2.csprojAssemblyReference.cache

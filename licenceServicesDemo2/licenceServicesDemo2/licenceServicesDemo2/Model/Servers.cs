@@ -8,11 +8,15 @@ namespace licenceServicesDemo2.Model
     {
         public int ServerID { get; set; }
 
+        public string SeverName { get; set; }
+
         public string IP { get; set; }
 
         public int Used { get; set; }
 
         public int Available { get; set; }
+
+        public List<Feature> features { get; set; }
 
         //public Servers()
         //{

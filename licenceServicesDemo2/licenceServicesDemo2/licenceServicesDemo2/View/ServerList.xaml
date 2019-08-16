@@ -8,46 +8,71 @@
     Title="Servers"
     mc:Ignorable="d">
     <ContentPage.Content>
-        <ListView x:Name="ServerListView">
-            <ListView.Header>
-                <Grid>
+        <Grid x:Name="Maingrid" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".4*" />
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".2*" />
-                    </Grid.ColumnDefinitions>
-
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        HorizontalTextAlignment="Center"
-                        Text="Server ID" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        Text="IP" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        Text="Used" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="3"
-                        HorizontalTextAlignment="Center"
-                        Text="Available" />
-                </Grid>
-
-            </ListView.Header>
+            <Label
+                x:Name="lb_empty"
+                Grid.Row="0"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="False"
+                Text="List is empty"
+                TextColor="LightCoral"
+                VerticalOptions="Center" />
 
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
+            <ListView
+                x:Name="ServerListView"
+                Grid.Row="0"
+                CachingStrategy="RecycleElement"
+                ItemTapped="ServerListView_ItemTapped">
+
+
+                <!--<ListView.Header>
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".4*" />
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            HorizontalTextAlignment="Center"
+                            Text="Server ID" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            Text="IP" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            Text="Used" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            HorizontalTextAlignment="Center"
+                            Text="Available" />
+                    </Grid>
+
+                </ListView.Header>-->
+
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <!--  Old Template Setup For window screen user  -->
+                        <!--<ViewCell>
+                        -->
                         <!--<StackLayout Padding="0,5,5,0">
                             <Label Text="{Binding ServerID}" />
                             <Label Text="{Binding IP}" />
@@ -57,34 +82,45 @@
 
 
                         <!--  column grid  -->
-                        <Grid Padding="0,2,0,0">
+                        <!--
+                            <Grid Padding="0,2,0,0">
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
 
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".4*" />
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".2*" />
-                            </Grid.ColumnDefinitions>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".4*" />
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".2*" />
+                                </Grid.ColumnDefinitions>
 
-                            <Label
-                                Grid.Column="0"
-                                HorizontalTextAlignment="Center"
-                                Text="{Binding ServerID}" />
-                            <Label Grid.Column="1" Text="{Binding IP}" />
-                            <Label Grid.Column="2" Text="{Binding Used}" />
-                            <Label
-                                Grid.Column="3"
-                                HorizontalTextAlignment="Center"
-                                Text="{Binding Available}" />
-                        </Grid>
+                                <Label
+                                    Grid.Column="0"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding ServerID}" />
+                                <Label Grid.Column="1" Text="{Binding IP}" />
+                                <Label Grid.Column="2" Text="{Binding Used}" />
+                                <Label
+                                    Grid.Column="3"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding Available}" />
+                            </Grid>
 
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                        </ViewCell>-->
+
+                        <TextCell
+                            Detail="{Binding IP}"
+                            DetailColor="Maroon"
+                            Text="{Binding SeverName}"
+                            TextColor="DarkBlue" />
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+
     </ContentPage.Content>
 </ContentPage>

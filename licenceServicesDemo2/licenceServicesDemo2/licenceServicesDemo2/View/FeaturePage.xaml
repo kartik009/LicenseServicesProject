@@ -9,53 +9,75 @@
     mc:Ignorable="d">
     <ContentPage.Content>
 
-        <ListView x:Name="FeatureListView" ItemTapped="FeatureListView_ItemTapped">
+        <Grid x:Name="Maingrid" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-            <ListView.Header>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" />
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".1*" />
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".2*" />
-                        <ColumnDefinition Width=".3*" />
-                    </Grid.ColumnDefinitions>
-
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        BackgroundColor="Green"
-                        Text="Features" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        BackgroundColor="Green"
-                        Text="Version" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="2"
-                        BackgroundColor="Green"
-                        Text="Count" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="3"
-                        BackgroundColor="Green"
-                        Text="Available" />
-                    <Label
-                        Grid.Row="0"
-                        Grid.Column="4"
-                        BackgroundColor="Green"
-                        Text="Expery Date" />
-
-                </Grid>
-
-            </ListView.Header>
+            <Label
+                x:Name="lb_empty_Feature"
+                Grid.Row="0"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="False"
+                Text="List is empty"
+                TextColor="MediumOrchid"
+                VerticalOptions="Center" />
 
 
-            <!--<ListView.HeaderTemplate>
+            <ListView
+                x:Name="FeatureListView"
+                Grid.Row="0"
+                CachingStrategy="RecycleElement"
+                ItemTapped="FeatureListView_ItemTapped">
+
+
+
+                <!--<ListView.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".1*" />
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".2*" />
+                            <ColumnDefinition Width=".3*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            BackgroundColor="Green"
+                            Text="Features" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BackgroundColor="Green"
+                            Text="Version" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            BackgroundColor="Green"
+                            Text="Count" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            BackgroundColor="Green"
+                            Text="Available" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            BackgroundColor="Green"
+                            Text="Expery Date" />
+
+                    </Grid>
+
+                </ListView.Header>-->
+
+
+                <!--<ListView.HeaderTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <Grid>
@@ -83,9 +105,13 @@
             </ListView.HeaderTemplate>-->
 
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <!--  Old Setup For Window USer  -->
+
+                        <!--<ViewCell>
+                        -->
                         <!--<StackLayout Padding="0,5,10,0">
                             <Label Text="{Binding FeatureName}" />
                             <Label Text="{Binding Ver}" />
@@ -95,35 +121,40 @@
                         </StackLayout>-->
 
                         <!--  column grid  -->
-                        <Grid>
+                        <!--
+                            <Grid>
 
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="Auto" />
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".1*" />
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".2*" />
-                                <ColumnDefinition Width=".3*" />
-                            </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".1*" />
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".3*" />
+                                </Grid.ColumnDefinitions>
 
-                            <Label
-                                Grid.Column="0"
-                                HorizontalTextAlignment="Center"
-                                Text="{Binding FeatureName}" />
+                                <Label
+                                    Grid.Column="0"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding FeatureName}" />
 
-                            <Label Grid.Column="1" Text="{Binding Ver}" />
-                            <Label Grid.Column="2" Text="{Binding count}" />
-                            <Label Grid.Column="3" Text="{Binding Available}" />
-                            <Label Grid.Column="4" Text="{Binding ExperyDate}" />
+                                <Label Grid.Column="1" Text="{Binding Ver}" />
+                                <Label Grid.Column="2" Text="{Binding count}" />
+                                <Label Grid.Column="3" Text="{Binding Available}" />
+                                <Label Grid.Column="4" Text="{Binding ExperyDate}" />
 
-                        </Grid>
+                            </Grid>
 
-                    </ViewCell>
-                    <!--<TextCell Text="Hello From FeaturePage" />-->
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                        </ViewCell>-->
+
+                        <TextCell Detail="{Binding FeatureName}" Text="{Binding Available}" />
+
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
