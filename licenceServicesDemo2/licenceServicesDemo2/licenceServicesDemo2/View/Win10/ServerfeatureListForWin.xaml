@@ -7,29 +7,291 @@
              x:Class="licenceServicesDemo2.View.Win10.ServerfeatureListForWin">
     
     
-    <Grid x:Name="GD_main" Padding="10,10,10,10" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
+    <Grid x:Name="GD_main" HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand" >
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width=".9*" />
             <ColumnDefinition Width="{Binding height}" />
         </Grid.ColumnDefinitions>
 
-        <StackLayout
-            x:Name="sv_main"
-            Grid.Column="0"
-            BackgroundColor="DarkSlateGray">
-            <Label Text="This is demo" TextColor="White" />
-            <Button Clicked="Button_Clicked" Text="Click it" />
-        </StackLayout>
+        <Frame x:Name="sv_Main" BackgroundColor="Azure" BorderColor="Maroon" FlowDirection="LeftToRight" Grid.Column="0" HasShadow="True" Margin="2,2,2,2" >
+            <Grid x:Name="GD_Server" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
-        <StackLayout
+                <Label
+                    x:Name="lb_empty"
+                    Grid.Row="0"
+                    FontSize="Large"
+                    HorizontalOptions="CenterAndExpand"
+                    IsVisible="False"
+                    Text="List is empty"
+                    TextColor="LightCoral"
+                    VerticalOptions="Center" />
+
+
+                <ListView
+                    x:Name="ServerListView"
+                    Grid.Row="0"
+                    CachingStrategy="RecycleElement"
+                    ItemTapped="ServerListView_ItemTapped">
+
+
+                        <ListView.Header>
+                        
+                        <Grid>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".1*" />
+                                <ColumnDefinition Width=".1*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="0"
+                                HorizontalTextAlignment="Center"
+                                Text="Server Name" />
+                        
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="1"
+                                Text="IP" />
+                        
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="2"
+                                Text="Used" />
+                        
+                            <Label
+                                Grid.Row="0"
+                                Grid.Column="3"
+                                HorizontalTextAlignment="Center"
+                                Text="Available" />
+                        
+                        </Grid>
+
+                    </ListView.Header>
+
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <!--  Old Template Setup For window screen user  -->
+                            <ViewCell>
+                        
+                            <!--<StackLayout Padding="0,5,5,0">
+                                <Label Text="{Binding ServerID}" />
+                                <Label Text="{Binding IP}" />
+                                <Label Text="{Binding Used}" />
+                                <Label Text="{Binding Available}" />
+                            </StackLayout>-->
+
+
+                              <!--column grid-->  
+                            
+                            <Grid Padding="0,2,0,0">
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".2*" />
+                                    <ColumnDefinition Width=".1*" />
+                                    <ColumnDefinition Width=".1*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Column="0"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding SeverName}" />
+                                
+                                <Label Grid.Column="1" Text="{Binding IP}" />
+                                
+                                <Label Grid.Column="2" Text="{Binding Used}" />
+                                
+                                <Label
+                                    Grid.Column="3"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding Available}" />
+                                
+                            </Grid>
+
+                        </ViewCell>
+
+                            <!--<TextCell
+                            Detail="{Binding IP}"
+                            DetailColor="Maroon"
+                            Text="{Binding SeverName}"
+                            TextColor="DarkBlue" />-->
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+
+        </Frame>
+        
+        <Frame            
             x:Name="sv_content"
             Grid.Column="1"
-            BackgroundColor="Aquamarine">
-            <Label Text="This is conten" TextColor="White" />
-            <Button
-                x:Name="Close"
-                Clicked="Close_Clicked"
-                Text="X" />
-        </StackLayout>
+            BackgroundColor="NavajoWhite" BorderColor="Maroon" FlowDirection="LeftToRight" HasShadow="True" Margin="2,2,2,2" >
+
+            <Grid x:Name="GD_Feature" RowSpacing="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label
+                x:Name="lb_empty_Feature"
+                Grid.Row="0"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand"
+                IsVisible="False"
+                Text="List is empty"
+                TextColor="MediumOrchid"
+                VerticalOptions="Center" />
+
+                <Button x:Name="BT_Close" Text="X" HorizontalOptions="Center" VerticalOptions="End" BorderColor="OrangeRed" Clicked="BT_Close_Clicked" Grid.Row="0" />
+
+                <ListView
+                    x:Name="FeatureListView"
+                    Grid.Row="0"
+                    CachingStrategy="RecycleElement"
+                    ItemTapped="FeatureListView_ItemTapped">
+
+
+
+                    <ListView.Header>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".1*" />
+                            <ColumnDefinition Width=".1*" />
+                            <ColumnDefinition Width=".1*" />
+                            <ColumnDefinition Width=".1*" />
+                            <ColumnDefinition Width=".2*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="0"
+                            BackgroundColor="Green"
+                            Text="Features" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="1"
+                            BackgroundColor="Green"
+                            Text="Version" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="2"
+                            BackgroundColor="Green"
+                            Text="Count" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="3"
+                            BackgroundColor="Green"
+                            Text="Available" />
+                        <Label
+                            Grid.Row="0"
+                            Grid.Column="4"
+                            BackgroundColor="Green"
+                            Text="Expery Date" />
+
+                    </Grid>
+
+                </ListView.Header>
+
+
+                    <!--<ListView.HeaderTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".1*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".2*" />
+                                <ColumnDefinition Width=".3*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0" Text="ServerID" />
+                            <Label Grid.Column="1" Text="Server IP" />
+                            <Label Grid.Column="2" Text="Count" />
+                            <Label Grid.Column="3" Text="Available" />
+                            <Label Grid.Column="4" Text="Expery Date" />
+
+                        </Grid>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.HeaderTemplate>-->
+
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+
+                            <!--  Old Setup For Window USer  -->
+
+                            <ViewCell>
+                        
+                            <!--<StackLayout Padding="0,5,10,0">
+                            <Label Text="{Binding FeatureName}" />
+                            <Label Text="{Binding Ver}" />
+                            <Label Text="{Binding Count}" />
+                            <Label Text="{Binding Available}" />
+                            <Label Text="{Binding ExperyDate}" />
+                        </StackLayout>-->
+
+                              <!--column grid-->  
+                            
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".1*" />
+                                        <ColumnDefinition Width=".2*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label
+                                    Grid.Column="0"
+                                    HorizontalTextAlignment="Center"
+                                    Text="{Binding FeatureName}" />
+
+                                <Label Grid.Column="1" Text="{Binding Ver}" />
+                                <Label Grid.Column="2" Text="{Binding count}" />
+                                <Label Grid.Column="3" Text="{Binding Available}" />
+                                <Label Grid.Column="4" Text="{Binding ExperyDate}" />
+
+                            </Grid>
+
+                        </ViewCell>
+
+                            <!--<TextCell Detail="{Binding FeatureName}" Text="{Binding Available}" />-->
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+
+        </Frame>
     </Grid>
 </ContentPage>

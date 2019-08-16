@@ -8,6 +8,7 @@
     Title="Servers"
     mc:Ignorable="d">
     <ContentPage.Content>
+        
         <Grid x:Name="Maingrid" RowSpacing="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />

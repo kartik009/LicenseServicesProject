@@ -1,0 +1,1 @@
+C:\Users\xam\Source\Repos\LicenseServicesProject1\licenceServicesDemo2\licenceServicesDemo2\licenceServicesDemo2.UWP\licenceServicesDemo2.UWP.csproj;x86
